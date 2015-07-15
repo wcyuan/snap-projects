@@ -49,7 +49,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeAAAAFoCAYAAACPNyggAAAOhUlEQVR4Xu
 <block s="doBroadcastAndWait">
 <block s="reportJoinWords">
 <list>
-<l>Screen</l>
+<l>Screen </l>
 <block s="getCostumeIdx"/>
 </list>
 </block>
