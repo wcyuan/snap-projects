@@ -1,0 +1,1879 @@
+<project name="invaders" app="Snap! 4.0, http://snap.berkeley.edu" version="1">
+<notes/>
+<thumbnail>
+data:image/png;base64,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
+</thumbnail>
+<stage name="Stage" width="480" height="360" costume="0" tempo="60" threadsafe="true" lines="round" codify="false" inheritance="false" scheduled="false" id="1">
+<pentrails>
+data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeAAAAFoCAYAAACPNyggAAAOhUlEQVR4Xu3VwQkAAAjEMN1/abewn7jAQRC64wgQIECAAIF3gX1fNEiAAAECBAiMAHsCAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQICLAfIECAAAECgYAAB+gmCRAgQICAAPsBAgQIECAQCAhwgG6SAAECBAgIsB8gQIAAAQKBgAAH6CYJECBAgIAA+wECBAgQIBAICHCAbpIAAQIECAiwHyBAgAABAoGAAAfoJgkQIECAgAD7AQIECBAgEAgIcIBukgABAgQIHLFxAWmhEwHPAAAAAElFTkSuQmCC
+</pentrails>
+<costumes>
+<list id="2"/>
+</costumes>
+<sounds>
+<list id="3"/>
+</sounds>
+<variables/>
+<blocks/>
+<scripts/>
+<sprites>
+<sprite name="Invader" idx="2" x="-220" y="20" heading="-90" scale="0.2" rotation="0" draggable="true" hidden="true" costume="1" color="0,106.64099999999998,130.05" pen="tip" id="8">
+<costumes>
+<list id="9">
+<item>
+<costume name="Invader" center-x="43" center-y="43.75" image="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAFUUlEQVR4Xu2dS4geRRCAv43vB1F8gOYQBDVCDEFQRFDYlYh68IH4unjQKHiKQS+KCLuLigcPKnjwojl4EfRgQBE9yK6KIqgHHwdRDx5E9GCixld8RCr/jDRtz/zVM9P9z/xTdVl2pru66pv6a3r6/6d6gebyOLAGvNpcxXh6LjR09XngNuAAsAR82FDPaLrFgj4NeAHY4RD6soD9zWioNXA0FvSnwPmBcd4pYP/dwIahd7kQuAe4AtgE3Ac84TsVC/qkIi9fEKDzEnDz0KlF2v8ncKTT52dgY0hHLGjRcV4B+4yAwqeBXZHGDrX5+8DFnvGVPJuAFt2LBewQpIeAR4dKL8LuQ1rI0q4paOl7a3FjDNl2F/BshNFDa/qPx+4r4Jw6J9qAFr27gScrBrhmTufY3wOnOz4L9COmRUpb0KL/MeCBwEDzOMfeBnwSkzLKtl2AFl17gNsDsOdtju3nZfVMqyvQwvg14OoA7HmZY/8OHOP4d9D7vzZ7dAl6nufYzwF3NEkZXaeOUt+8zrH9lHEV8Ma0G6B7vsuILvXO2xxblhU2ONB+AE6NgayZR8vj5cnA2cU07n7gLcUg8zLH/gzY6vgrke1CV6CYNHEj+tjiSt0CXA5cBJwZ0LQf+E0xwgkVz/0/Ab8o+vehie//tw2N2iSg/fzTUJd1qyGwYKDzxIeBzsMZA22gMxHINIxFtIHORCDTMBbRBjoTgUzDWEQb6EwEMg1jET0I0CsrKywuyqqoXtbX15F+s5IZ2dwuosXo5eXlKGarq6szBz0Dmw20Jko6CI7uQIsxa2vyc+n/y9LS0n+R34HRGjaVbdxPYUabuwVdlXt952ado8vUUXfRO7bZQGcKju5AV6WN8jMs6UOkT6kjo83dgdYmzj6BzmizgdbA7iA42oEu04HGWLfNtI9srL6Y9jOyuR3oGAdH3tZAZwqAYYCuW5+Y9dqJ8kINB3TV+kQHNyolq1bNDHQrfPrOwwMtESyieYzWc0je0kAnRzwZwEAbaIeAv5JmqSNReBjoRGB9tQbaQGsJDO9mWC5I9WV9W0l6eKB9x+zJUHmpNc3qftZgoDUElW2mrSHPcn1b6cIwUofSmT43M9CZro6BNtCZCGQaxiI6E+gD9uZsJtICWioYSKE8k4QEyuoG9uJ9QsiHV/4L/QbaQCcmkEm9G9GqQnk1drnVDWMrtchLLf47GvItbIqXXX4FjnP8qCp3dB2w1/P3FeDaBtdmgwu6bX2loYD+0auMU+W3VOF504O6XpRvjmbdFq474FBA+yUvqxhIXegPPKIfAXI8WsYI+mtgsyJ1bAE+94hKZcpzoym3rLbrjzeUiPYrf1UFm9TH9otVfQeE6mZPZT/GiH4buEwR0VLlTArZuiLV0Y6fSjXQYIygXwRuUoCWJn8FShYfVRyP4j1G0FLvWupel1LHYF9RYNGFKlUcpZpjlIwR9N3AM0rQ/o1Tup0FyPEoGSNof9pWxyC0Hcr2QLHuqdDHCFqguGs7MouQ2URI3gMu8U5cCrw7lazXwEDDDcDLFeBeB670zkkxcjkeJQYaHiz2KQiBk9LyN3onpEiuzFyixEBP9ifYWUEtVAn9TkCOR4mBnlQ2lwrnIXmq2AfLPXdvzZYolfANNNQtFD0CXA/IHlhS91r+fgw8HBXOPVvr8IszyZJkivVof9bxBSALSEmlLxGd1MmAcnd6JwtHsj1eUjHQII/ZpySl3KPUkdpPX78b0bLfwImpDbCIhj8A2UgiqRjoyY+Hjk5K2VLHYbyyoY27nWkS5hbR0PZnFqoL0yVo1YA9adTm+81GLvwL6uwaaWEpC1cAAAAASUVORK5CYII=" id="10"/>
+</item>
+</list>
+</costumes>
+<sounds>
+<list id="11"/>
+</sounds>
+<variables>
+<variable name="invaders per row">
+<l>11</l>
+</variable>
+<variable name="number of invader rows">
+<l>5</l>
+</variable>
+<variable name="invader x-space">
+<l>25</l>
+</variable>
+<variable name="invader y-space">
+<l>-20</l>
+</variable>
+<variable name="invader speed">
+<l>3</l>
+</variable>
+<variable name="is master invader">
+<bool>true</bool>
+</variable>
+<variable name="Invader Shooting Frequency">
+<l>5</l>
+</variable>
+<variable name="Invader Score">
+<l>100</l>
+</variable>
+</variables>
+<blocks>
+<block-definition s="Move Invaders" type="command" category="other">
+<header/>
+<code/>
+<inputs/>
+<script>
+<block s="doForever">
+<script>
+<block s="doIf">
+<block s="reportNot">
+<block s="reportEquals">
+<block var="INVADER DIRECTION"/>
+<block var="new invader direction"/>
+</block>
+</block>
+<script>
+<block s="doBroadcastAndWait">
+<l>lower invader level</l>
+</block>
+</script>
+</block>
+<block s="doSetVar">
+<l>INVADER DIRECTION</l>
+<block var="new invader direction"/>
+</block>
+<block s="doBroadcastAndWait">
+<l>move invaders</l>
+</block>
+</script>
+</block>
+</script>
+</block-definition>
+<block-definition s="Make %'n rows' of Invaders with %'num invaders per row'" type="command" category="other">
+<header/>
+<code/>
+<inputs>
+<input type="%s"/>
+<input type="%s"/>
+</inputs>
+<script>
+<block s="gotoXY">
+<l>-220</l>
+<l>120</l>
+</block>
+<block s="doRepeat">
+<block var="n rows"/>
+<script>
+<block s="doRepeat">
+<block var="num invaders per row"/>
+<script>
+<block s="createClone">
+<l>Invader</l>
+</block>
+<block s="doChangeVar">
+<l>NUMBER OF INVADERS</l>
+<l>1</l>
+</block>
+<block s="changeXPosition">
+<block var="invader x-space"/>
+</block>
+</script>
+</block>
+<block s="changeXPosition">
+<block s="reportProduct">
+<block s="reportDifference">
+<l>0</l>
+<block var="invaders per row"/>
+</block>
+<block var="invader x-space"/>
+</block>
+</block>
+<block s="changeYPosition">
+<block var="invader y-space"/>
+</block>
+</script>
+</block>
+</script>
+</block-definition>
+<block-definition s="Check Invader Killed" type="command" category="other">
+<header/>
+<code/>
+<inputs/>
+<script>
+<block s="doIf">
+<block s="reportTouchingObject">
+<l>player bullet</l>
+</block>
+<script>
+<block s="doChangeVar">
+<l>NUMBER OF INVADERS</l>
+<l>-1</l>
+</block>
+<block s="doChangeVar">
+<l>SCORE</l>
+<block var="Invader Score"/>
+</block>
+<block s="doIf">
+<block s="reportLessThan">
+<block var="NUMBER OF INVADERS"/>
+<l>1</l>
+</block>
+<script>
+<block s="doBroadcast">
+<l>Next Level</l>
+</block>
+</script>
+</block>
+<block s="removeClone"/>
+</script>
+</block>
+</script>
+</block-definition>
+</blocks>
+<scripts>
+<script x="18" y="12">
+<block s="receiveMessage">
+<l>Setup</l>
+</block>
+<block s="hide"/>
+<block s="doSwitchToCostume">
+<l>Invader</l>
+</block>
+<block s="setScale">
+<l>20</l>
+</block>
+<block s="doSetVar">
+<l>invaders per row</l>
+<l>11</l>
+</block>
+<block s="doSetVar">
+<l>number of invader rows</l>
+<l>5</l>
+</block>
+<block s="doSetVar">
+<l>invader x-space</l>
+<l>25</l>
+</block>
+<block s="doSetVar">
+<l>invader y-space</l>
+<l>-20</l>
+</block>
+<block s="doSetVar">
+<l>invader speed</l>
+<block s="reportSum">
+<l>1</l>
+<block s="reportProduct">
+<block var="LEVEL"/>
+<l>2</l>
+</block>
+</block>
+</block>
+<block s="doSetVar">
+<l>is master invader</l>
+<block s="reportTrue"/>
+</block>
+<block s="doSetVar">
+<l>INVADER DIRECTION</l>
+<l>90</l>
+</block>
+<block s="doSetVar">
+<l>new invader direction</l>
+<block var="INVADER DIRECTION"/>
+</block>
+<block s="doSetVar">
+<l>NUMBER OF INVADERS</l>
+<l>0</l>
+</block>
+<block s="doSetVar">
+<l>Invader Shooting Frequency</l>
+<block s="reportSum">
+<l>3</l>
+<block s="reportProduct">
+<l>2</l>
+<block var="LEVEL"/>
+</block>
+</block>
+</block>
+<block s="doSetVar">
+<l>Invader Score</l>
+<block s="reportSum">
+<l>50</l>
+<block s="reportProduct">
+<l>50</l>
+<block var="LEVEL"/>
+</block>
+</block>
+</block>
+<custom-block s="Make %s of Invaders with %s" scope="Invader">
+<block var="number of invader rows"/>
+<block var="invaders per row"/>
+</custom-block>
+</script>
+<script x="233" y="10">
+<block s="receiveOnClone"/>
+<block s="show"/>
+<block s="doSetVar">
+<l>is master invader</l>
+<block s="reportFalse"/>
+</block>
+</script>
+<script x="248" y="101.00000000000011">
+<block s="receiveMessage">
+<l>check invader shot</l>
+</block>
+<block s="doIf">
+<block s="reportNot">
+<block var="is master invader"/>
+</block>
+<script>
+<custom-block s="Check Invader Killed" scope="Invader"/>
+</script>
+</block>
+</script>
+<script x="278" y="614">
+<block s="receiveMessage">
+<l>lower invader level</l>
+</block>
+<block s="doIf">
+<block s="reportNot">
+<block var="is master invader"/>
+</block>
+<script>
+<block s="changeYPosition">
+<block var="invader y-space"/>
+</block>
+</script>
+</block>
+</script>
+<script x="26" y="464.0000000000007">
+<block s="receiveMessage">
+<l>Point Invaders Right</l>
+</block>
+<block s="doIf">
+<block var="is master invader"/>
+<script>
+<block s="doSetVar">
+<l>new invader direction</l>
+<l>90</l>
+</block>
+</script>
+</block>
+</script>
+<script x="29" y="589">
+<block s="receiveMessage">
+<l>Point Invaders Left</l>
+</block>
+<block s="doIf">
+<block var="is master invader"/>
+<script>
+<block s="doSetVar">
+<l>new invader direction</l>
+<l>-90</l>
+</block>
+</script>
+</block>
+</script>
+<script x="33" y="691.0000000000002">
+<block s="receiveMessage">
+<l>Delete Invaders</l>
+</block>
+<block s="doChangeVar">
+<l>NUMBER OF INVADERS</l>
+<l>-1</l>
+</block>
+<block s="removeClone"/>
+</script>
+<script x="298" y="731.0000000000002">
+<block s="receiveMessage">
+<l>Start Play</l>
+</block>
+<block s="doIf">
+<block s="reportNot">
+<block var="is master invader"/>
+</block>
+<script>
+<block s="doForever">
+<script>
+<block s="doIf">
+<block s="reportLessThan">
+<block s="reportRandom">
+<l>1</l>
+<l>1000</l>
+</block>
+<block var="Invader Shooting Frequency"/>
+</block>
+<script>
+<block s="doBroadcast">
+<block s="reportJoinWords">
+<list>
+<l>InvaderShoots</l>
+<block s="xPosition"/>
+<l></l>
+<block s="yPosition"/>
+</list>
+</block>
+</block>
+</script>
+</block>
+</script>
+</block>
+</script>
+</block>
+</script>
+<script x="480" y="152.99999999999966">
+<block s="receiveMessage">
+<l>move invaders</l>
+</block>
+<block s="doIf">
+<block s="reportNot">
+<block var="is master invader"/>
+</block>
+<script>
+<custom-block s="Check Invader Killed" scope="Invader"/>
+<block s="setHeading">
+<block var="INVADER DIRECTION"/>
+</block>
+<block s="forward">
+<block var="invader speed"/>
+</block>
+<block s="doIf">
+<block s="reportGreaterThan">
+<block s="xPosition"/>
+<l>225</l>
+</block>
+<script>
+<block s="doBroadcast">
+<l>Point Invaders Left</l>
+</block>
+</script>
+</block>
+<block s="doIf">
+<block s="reportLessThan">
+<block s="xPosition"/>
+<l>-225</l>
+</block>
+<script>
+<block s="doBroadcast">
+<l>Point Invaders Right</l>
+</block>
+</script>
+</block>
+</script>
+</block>
+</script>
+<script x="291" y="458.9999999999993">
+<block s="receiveMessage">
+<l>Start Play</l>
+</block>
+<block s="doIf">
+<block var="is master invader"/>
+<script>
+<custom-block s="Move Invaders" scope="Invader"/>
+</script>
+</block>
+</script>
+</scripts>
+</sprite>
+<sprite name="player bullet" idx="3" x="-30" y="-125" heading="-90" scale="0.2" rotation="1" draggable="true" hidden="true" costume="1" color="80,80,80" pen="tip" id="273">
+<costumes>
+<list id="274">
+<item>
+<costume name="Bullet" center-x="45" center-y="84" image="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAABqCAYAAADUUvOEAAAEsklEQVRoQ+2bX2gcRRzHP3tNaJqSVKSg4XYbsK3a5vYitWANhbbUP/hghepDQaGKglRIHzRoQcH6Dyk2DxrRPoiKfxAfFCqCYkVr1dJCI+Q2qcVWH3JzDRF9aINtIM2O7N7ccZfc3uxuUyoy83Sz8/39ft/9zm9mfnPHWaRsY1lu8SXttLDU9+nsFXyW0lWdmZXWScFmjwWvBvYW7MsJ9qT1VWuXmpBnsxt4PXAm4c28oP9qE3oUeEeReNcVBP3LbqkVGnXYISWfhAwkn7oldlw2m/L0p2sjDtsykoPK+ktXcG86T/VWqQmNZdnqW3yrkvq7nGBrGkKezWvAP63TDN78F1OpCRWy3G5ZHFVJfTwv2JCU0MluumZnOate6rwleSw1Ic8mD4woEp4rwn6iptQZCI0sfnaLbExPyGElkjOKwR+uYGUSNkodAWSU3f2u4POQ0O83sOziDP2+pCMveCaO4xPddC1WciOZdEtcH8eugmmkTiiUZ7NdwkcWLAketLWxbPUZzuucn15F5/Q05xRuyhV06mwq41HqqFwCz+YEcKuay+fcIq/onEtYNGpzSeF8V7BIZ6NTp0qo4PCwJXkvNJBM5kp0WeGJ0Lx5NtPA4gA1Be19gos6m2bqVAkFHzyb34DVwecM7O4RDOmcezZ/A9cGuBbJ8jWlsN+0ReVOxai6ysZs+n14Qw2cdgU3xnA+DjjhS/h095wl6Ec2nTp1CkmwRrNMYHFdOHMWj+SLvN8sgGdzCrgpxMyy1p3gVw0+2JXr9p25+Lp9yHN4FsnLCjTsCtY3DeAwjGRd+AIZ1ufHGY7Cx1GnTqGgo5byBNCuHIebVVQQL8uPWGxUim7KFzkSiS2fWU3VmUcoeFCw2WfB08rxYVewpUmQr4G7wxyCe3oEQX9ei6tOQ0IjWeyMRbHqNcNd7jiHGgXy7LCO3q4cPZCLqKt1K6vWd8OzzMvyFha7wkCSL3Il7osg9CHwkMLtzJX4YC6u9kSPkwYNCf2ygrWtPmMV5xnY0CM4PjeY53AAyePhc8kut8SBeZiYuVOxizztC3Z4vj1YjsXHeVFWoraNOgxKyZPhM4sBt8hg7XhSdRrmUMXhmM1tPhyr9Gcy9Kwb52RtwEKWlzIZtkifC9Lip7zgxdrxU8vpmGkLCT8FdLhCXzI3rYdGsxyUFtvUlLztlniiUS7pnh1bRefSae5otoVopywAeCu4E59vKmBf4vSWCIqqK9a0FaNnIyWcQzIkLzHUO8mfV4xNnGtQUMBdA185MUqLhSCqVWghgiTxYQjp1DIKGYV0CujG/1c5tFn3tmr8cEycKhqSoOux2oukgieahUTgOdwNId1kGoWMQoECZpXp8mBBFOrb3FqN09IKRw7N1MZNFCMROGpjHNi7hIHny1+Y7H/hAvv31n2zlyhGIrAhpEs4o5BRqIECZpXp0sIoZBQyZ1lNDlSLfHPaR6wMo5BuyzAKGYUW7KJo9iGzD+mWk1HIKNREAVPk69LDKGQUMtcgcw3SrQKjkFFojgLm6NClhFHIKPSfOVz7NpV/VTz6w8zV/wFPkxeJFk4icNTvZYaQ7iptFDIK6bbziPHvY9pF/uuhkf2/rgfFzvbRdq0AAAAASUVORK5CYII=" id="275"/>
+</item>
+</list>
+</costumes>
+<sounds>
+<list id="276"/>
+</sounds>
+<variables>
+<variable name="Player Bullet Speed">
+<l>10</l>
+</variable>
+<variable name="Is Master">
+<bool>true</bool>
+</variable>
+</variables>
+<blocks/>
+<scripts>
+<script x="26" y="187.00000000000006">
+<block s="receiveOnClone"/>
+<block s="doSetVar">
+<l>Is Master</l>
+<block s="reportFalse"/>
+</block>
+<block s="show"/>
+<block s="doForever">
+<script>
+<block s="changeYPosition">
+<block var="Player Bullet Speed"/>
+</block>
+<block s="doIf">
+<block s="reportOr">
+<block s="reportTouchingObject">
+<l>Invader</l>
+</block>
+<block s="reportOr">
+<block s="reportTouchingObject">
+<l>
+<option>edge</option>
+</l>
+</block>
+<block s="reportTouchingObject">
+<l>invader bullet</l>
+</block>
+</block>
+</block>
+<script>
+<block s="doBroadcastAndWait">
+<l>check invader shot</l>
+</block>
+<block s="doChangeVar">
+<l>NUMBER OF PLAYER BULLETS</l>
+<l>-1</l>
+</block>
+<block s="removeClone"/>
+</script>
+</block>
+</script>
+</block>
+</script>
+<script x="10" y="10">
+<block s="receiveGo"/>
+<block s="hide"/>
+<block s="setScale">
+<l>20</l>
+</block>
+<block s="setHeading">
+<l>-90</l>
+</block>
+<block s="doSetVar">
+<l>Player Bullet Speed</l>
+<l>10</l>
+</block>
+<block s="doSetVar">
+<l>NUMBER OF PLAYER BULLETS</l>
+<l>0</l>
+</block>
+<block s="doSetVar">
+<l>Is Master</l>
+<block s="reportTrue"/>
+</block>
+</script>
+<script x="29" y="459">
+<block s="receiveMessage">
+<l>Player Shoots</l>
+<comment w="90" collapsed="false">
+If you want it to keep shooting while you hold down space, you need thread safe scripts
+</comment>
+</block>
+<block s="doIf">
+<block var="Is Master"/>
+<script>
+<block s="doIf">
+<block s="reportLessThan">
+<block var="NUMBER OF PLAYER BULLETS"/>
+<l>3</l>
+</block>
+<script>
+<block s="gotoXY">
+<block s="reportAttributeOf">
+<l>
+<option>x position</option>
+</l>
+<l>player</l>
+</block>
+<block s="reportAttributeOf">
+<l>
+<option>y position</option>
+</l>
+<l>player</l>
+</block>
+</block>
+<block s="doChangeVar">
+<l>NUMBER OF PLAYER BULLETS</l>
+<l>1</l>
+</block>
+<block s="createClone">
+<l>
+<option>myself</option>
+</l>
+</block>
+</script>
+</block>
+</script>
+</block>
+</script>
+<script x="346" y="87.99999999999994">
+<block s="receiveMessage">
+<l>Delete all bullets</l>
+</block>
+<block s="doIfElse">
+<block var="Is Master"/>
+<script>
+<block s="doSetVar">
+<l>NUMBER OF PLAYER BULLETS</l>
+<l>0</l>
+</block>
+</script>
+<script>
+<block s="removeClone"/>
+</script>
+</block>
+</script>
+</scripts>
+</sprite>
+<sprite name="invader bullet" idx="4" x="210" y="20" heading="-90" scale="0.2" rotation="0" draggable="true" hidden="true" costume="1" color="80,80,80" pen="tip" id="368">
+<costumes>
+<list id="369">
+<item>
+<costume name="Bullet" center-x="45" center-y="84" image="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAABqCAYAAADUUvOEAAAEsklEQVRoQ+2bX2gcRRzHP3tNaJqSVKSg4XYbsK3a5vYitWANhbbUP/hghepDQaGKglRIHzRoQcH6Dyk2DxrRPoiKfxAfFCqCYkVr1dJCI+Q2qcVWH3JzDRF9aINtIM2O7N7ccZfc3uxuUyoy83Sz8/39ft/9zm9mfnPHWaRsY1lu8SXttLDU9+nsFXyW0lWdmZXWScFmjwWvBvYW7MsJ9qT1VWuXmpBnsxt4PXAm4c28oP9qE3oUeEeReNcVBP3LbqkVGnXYISWfhAwkn7oldlw2m/L0p2sjDtsykoPK+ktXcG86T/VWqQmNZdnqW3yrkvq7nGBrGkKezWvAP63TDN78F1OpCRWy3G5ZHFVJfTwv2JCU0MluumZnOate6rwleSw1Ic8mD4woEp4rwn6iptQZCI0sfnaLbExPyGElkjOKwR+uYGUSNkodAWSU3f2u4POQ0O83sOziDP2+pCMveCaO4xPddC1WciOZdEtcH8eugmmkTiiUZ7NdwkcWLAketLWxbPUZzuucn15F5/Q05xRuyhV06mwq41HqqFwCz+YEcKuay+fcIq/onEtYNGpzSeF8V7BIZ6NTp0qo4PCwJXkvNJBM5kp0WeGJ0Lx5NtPA4gA1Be19gos6m2bqVAkFHzyb34DVwecM7O4RDOmcezZ/A9cGuBbJ8jWlsN+0ReVOxai6ysZs+n14Qw2cdgU3xnA+DjjhS/h095wl6Ec2nTp1CkmwRrNMYHFdOHMWj+SLvN8sgGdzCrgpxMyy1p3gVw0+2JXr9p25+Lp9yHN4FsnLCjTsCtY3DeAwjGRd+AIZ1ufHGY7Cx1GnTqGgo5byBNCuHIebVVQQL8uPWGxUim7KFzkSiS2fWU3VmUcoeFCw2WfB08rxYVewpUmQr4G7wxyCe3oEQX9ei6tOQ0IjWeyMRbHqNcNd7jiHGgXy7LCO3q4cPZCLqKt1K6vWd8OzzMvyFha7wkCSL3Il7osg9CHwkMLtzJX4YC6u9kSPkwYNCf2ygrWtPmMV5xnY0CM4PjeY53AAyePhc8kut8SBeZiYuVOxizztC3Z4vj1YjsXHeVFWoraNOgxKyZPhM4sBt8hg7XhSdRrmUMXhmM1tPhyr9Gcy9Kwb52RtwEKWlzIZtkifC9Lip7zgxdrxU8vpmGkLCT8FdLhCXzI3rYdGsxyUFtvUlLztlniiUS7pnh1bRefSae5otoVopywAeCu4E59vKmBf4vSWCIqqK9a0FaNnIyWcQzIkLzHUO8mfV4xNnGtQUMBdA185MUqLhSCqVWghgiTxYQjp1DIKGYV0CujG/1c5tFn3tmr8cEycKhqSoOux2oukgieahUTgOdwNId1kGoWMQoECZpXp8mBBFOrb3FqN09IKRw7N1MZNFCMROGpjHNi7hIHny1+Y7H/hAvv31n2zlyhGIrAhpEs4o5BRqIECZpXp0sIoZBQyZ1lNDlSLfHPaR6wMo5BuyzAKGYUW7KJo9iGzD+mWk1HIKNREAVPk69LDKGQUMtcgcw3SrQKjkFFojgLm6NClhFHIKPSfOVz7NpV/VTz6w8zV/wFPkxeJFk4icNTvZYaQ7iptFDIK6bbziPHvY9pF/uuhkf2/rgfFzvbRdq0AAAAASUVORK5CYII=" id="370"/>
+</item>
+</list>
+</costumes>
+<sounds>
+<list id="371"/>
+</sounds>
+<variables>
+<variable name="Invader Bullet Speed">
+<l>10</l>
+</variable>
+<variable name="Is Master">
+<bool>true</bool>
+</variable>
+</variables>
+<blocks/>
+<scripts>
+<script x="410.0000009999999" y="82.00000000000023">
+<block s="receiveMessage">
+<l>Delete all bullets</l>
+</block>
+<block s="doIfElse">
+<block var="Is Master"/>
+<script>
+<block s="doSetVar">
+<l>NUMBER OF INVADER BULLETS</l>
+<l>0</l>
+</block>
+</script>
+<script>
+<block s="removeClone"/>
+</script>
+</block>
+</script>
+<script x="10" y="269.0000000000002">
+<block s="receiveOnClone"/>
+<block s="doSetVar">
+<l>Is Master</l>
+<block s="reportFalse"/>
+</block>
+<block s="show"/>
+<block s="doForever">
+<script>
+<block s="changeYPosition">
+<block s="reportDifference">
+<l>0</l>
+<block var="Invader Bullet Speed"/>
+</block>
+</block>
+<block s="doIfElse">
+<block s="reportAnd">
+<block s="reportTouchingObject">
+<l>player</l>
+</block>
+<block var="GAME ON"/>
+</block>
+<script>
+<block s="doBroadcast">
+<l>Died</l>
+</block>
+</script>
+<script>
+<block s="doIf">
+<block s="reportOr">
+<block s="reportTouchingObject">
+<l>player</l>
+</block>
+<block s="reportOr">
+<block s="reportTouchingObject">
+<l>
+<option>edge</option>
+</l>
+</block>
+<block s="reportTouchingObject">
+<l>player bullet</l>
+</block>
+</block>
+</block>
+<script>
+<block s="doChangeVar">
+<l>NUMBER OF INVADER BULLETS</l>
+<l>-1</l>
+</block>
+<block s="removeClone"/>
+</script>
+</block>
+</script>
+</block>
+</script>
+</block>
+</script>
+<script x="30" y="82.00000000000028">
+<block s="receiveGo"/>
+<block s="hide"/>
+<block s="setScale">
+<l>20</l>
+</block>
+<block s="setHeading">
+<l>-90</l>
+</block>
+<block s="doSetVar">
+<l>Invader Bullet Speed</l>
+<l>10</l>
+</block>
+<block s="doSetVar">
+<l>NUMBER OF INVADER BULLETS</l>
+<l>0</l>
+</block>
+<block s="doSetVar">
+<l>Is Master</l>
+<block s="reportTrue"/>
+</block>
+</script>
+<script x="391.0000009999999" y="278">
+<block s="receiveMessage">
+<l>
+<option>any message</option>
+</l>
+</block>
+<block s="doDeclareVariables">
+<list>
+<l>message parts</l>
+</list>
+</block>
+<block s="doSetVar">
+<l>message parts</l>
+<block s="reportTextSplit">
+<block s="getLastMessage"/>
+<l></l>
+</block>
+</block>
+<block s="doIf">
+<block s="reportEquals">
+<block s="reportListItem">
+<l>1</l>
+<block var="message parts"/>
+</block>
+<l>InvaderShoots</l>
+</block>
+<script>
+<block s="doIf">
+<block var="Is Master"/>
+<script>
+<block s="doIf">
+<block s="reportLessThan">
+<block var="NUMBER OF INVADER BULLETS"/>
+<l>1</l>
+</block>
+<script>
+<block s="gotoXY">
+<block s="reportListItem">
+<l>2</l>
+<block var="message parts"/>
+</block>
+<block s="reportListItem">
+<l>3</l>
+<block var="message parts"/>
+</block>
+</block>
+<block s="doChangeVar">
+<l>NUMBER OF INVADER BULLETS</l>
+<l>1</l>
+</block>
+<block s="createClone">
+<l>
+<option>myself</option>
+</l>
+</block>
+</script>
+</block>
+</script>
+</block>
+</script>
+</block>
+</script>
+</scripts>
+</sprite>
+<watcher scope="player" var="Player Speed" style="normal" x="10" y="10" color="243,118,29" hidden="true"/>
+<watcher scope="player bullet" var="Player Bullet Speed" style="normal" x="10" y="31.000001999999995" color="243,118,29" hidden="true"/>
+<watcher scope="player bullet" s="xPosition" style="normal" x="10" y="73.00000599999998" color="74,108,212" hidden="true"/>
+<watcher scope="player bullet" s="yPosition" style="normal" x="10" y="94.00000799999998" color="74,108,212" hidden="true"/>
+<watcher scope="Invader" var="invaders per row" style="normal" x="10" y="136.00001199999997" color="243,118,29" hidden="true"/>
+<watcher scope="Invader" var="number of invader rows" style="normal" x="10" y="157.00001399999996" color="243,118,29" hidden="true"/>
+<watcher scope="Invader" var="invader x-space" style="normal" x="10" y="178.00001599999996" color="243,118,29" hidden="true"/>
+<watcher scope="Invader" var="invader y-space" style="normal" x="10" y="199.00001799999995" color="243,118,29" hidden="true"/>
+<watcher scope="Invader" var="invader speed" style="normal" x="10" y="220.00001999999995" color="243,118,29" hidden="true"/>
+<watcher scope="Invader" s="xPosition" style="normal" x="10" y="262.00002399999994" color="74,108,212" hidden="true"/>
+<watcher var="NUMBER OF PLAYER BULLETS" style="normal" x="10" y="283.00002599999993" color="243,118,29" hidden="true"/>
+<watcher var="INVADER DIRECTION" style="normal" x="10" y="304.00002799999993" color="243,118,29" hidden="true"/>
+<watcher scope="Invader" var="is master invader" style="normal" x="10" y="325.0000299999999" color="243,118,29" hidden="true"/>
+<watcher var="new invader direction" style="normal" x="10" y="338.999998" color="243,118,29" hidden="true"/>
+<watcher var="LIVES" style="normal" x="363" y="11.999998000000005" color="243,118,29"/>
+<watcher scope="Button" s="xPosition" style="normal" x="10" y="338.999998" color="74,108,212" hidden="true"/>
+<watcher scope="Button" s="yPosition" style="normal" x="10" y="338.999998" color="74,108,212" hidden="true"/>
+<watcher scope="player" s="xPosition" style="normal" x="10" y="316.999998" color="74,108,212" hidden="true"/>
+<watcher scope="player" s="yPosition" style="normal" x="10" y="338" color="74,108,212" hidden="true"/>
+<sprite name="player" idx="1" x="-100" y="10" heading="90" scale="0.2" rotation="0" draggable="true" costume="1" color="80,80,80" pen="tip" id="517">
+<costumes>
+<list id="518">
+<item>
+<costume name="Player" center-x="61" center-y="80.75" image="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAABmCAYAAAAETYUEAAACr0lEQVR4Xu3cYW7TQBCGYftklDPAMeEMlJMZVapFpETVesK435qnv7OZ2e/dd+y6Tdblwj8v37eXyvZef6yvlXXJa9bk5p7t7cu3bau8x++f6+VyudyGbsEC/TcNoB8oz+jKHPzENYxm9IfHj9GfaGelNKMZzeiKOalrGM1oRqfaWemL0YxmdMWc1DWMZjSjU+2s9MVoRjO6Yk7qGkYzmtGpdlb6YjSjGV0xJ3UNoxnN6FQ7K30xmtGMrpiTuobRjGZ0qp2VvhjNaEZXzEldw2hGMzrVzkpfjGb0/2f0kc8Qz/a54asbPcJuZ7YeCWO2zyQd2dut4rPsc2R/+16AfjDErwR6XZevb1sE+uKg9+0BDfR9ArOMtL3zkWvYo9vvWfZ5ZH+MZjSjKw9pzlzD6Pe0jwRx1V+v3Ix9oJ5r9GRftMbom2fdR8KY5aS7674fV+663XW76z7zDrpS68g0ZjSjGV2x7Mw1jPZ79N15M7qNbqP7zDFcqWV0G91G94g5szwYYjSjGc3ogQRmGWmedXvWPXCcl2WWA+0a7RrtGj2iNKP948HIOTntNUa30W10j+hmdBvdI+fktNcY3Ub3c6N7/2TeaUf2yULbtvyqvMUs+zyyv0N/j66EZk1GAkBncGjvAuj2iDMKAJ3Bob0LoNsjzigAdAaH9i6Abo84owDQGRzauwC6PeKMAkBncGjvAuj2iDMKAJ3Bob0LoNsjzigAdAaH9i6Abo84owDQGRzauwC6PeKMAkBncGjvAuj2iDMKAJ3Bob0LoNsjzigAdAaH9i6Abo84owDQGRzauwC6PeKMAkBncGjvAuj2iDMKAJ3Bob0LoNsjzigAdAaH9i6Abo84owDQGRzauwC6PeKMAkBncGjvAuj2iDMKAJ3Bob2LN9ClL3Rp70yBf5rAH9dXPMgHnnIiAAAAAElFTkSuQmCC" id="519"/>
+</item>
+</list>
+</costumes>
+<sounds>
+<list id="520"/>
+</sounds>
+<variables>
+<variable name="Player Speed">
+<l>2</l>
+</variable>
+</variables>
+<blocks/>
+<scripts>
+<script x="35.999998000000005" y="10">
+<block s="receiveMessage">
+<l>Welcome Screen</l>
+</block>
+<block s="gotoXY">
+<l>-100</l>
+<l>10</l>
+</block>
+<block s="bubble">
+<l>
+Welcome! Press START to begin. Use arrow keys to move, space to shoot.
+</l>
+</block>
+</script>
+<script x="29.999998000000005" y="114">
+<block s="receiveGo"/>
+<block s="doSetVar">
+<l>Player Speed</l>
+<l>2</l>
+</block>
+<block s="setScale">
+<l>20</l>
+</block>
+<block s="doBroadcast">
+<l>Welcome Screen</l>
+</block>
+</script>
+<script x="223.999998" y="110">
+<block s="receiveMessage">
+<l>Start Play</l>
+</block>
+<block s="doSetVar">
+<l>GAME ON</l>
+<block s="reportTrue"/>
+</block>
+<block s="doForever">
+<script>
+<block s="doIf">
+<block s="reportKeyPressed">
+<l>
+<option>left arrow</option>
+</l>
+</block>
+<script>
+<block s="changeXPosition">
+<block s="reportDifference">
+<l>0</l>
+<block var="Player Speed"/>
+</block>
+</block>
+<block s="bounceOffEdge"/>
+</script>
+</block>
+<block s="doIf">
+<block s="reportKeyPressed">
+<l>
+<option>right arrow</option>
+</l>
+</block>
+<script>
+<block s="changeXPosition">
+<block var="Player Speed"/>
+</block>
+<block s="bounceOffEdge"/>
+</script>
+</block>
+<block s="doIf">
+<block s="reportKeyPressed">
+<l>
+<option>space</option>
+</l>
+</block>
+<script>
+<block s="doIf">
+<block var="GAME ON"/>
+<script>
+<block s="doBroadcast">
+<l>Player Shoots</l>
+</block>
+</script>
+</block>
+</script>
+</block>
+<block s="doIf">
+<block s="reportTouchingObject">
+<l>invader bullet</l>
+</block>
+<script>
+<block s="doIf">
+<block var="GAME ON"/>
+<script>
+<block s="doBroadcast">
+<l>Died</l>
+</block>
+</script>
+</block>
+</script>
+</block>
+<block s="doIf">
+<block s="reportTouchingObject">
+<l>Invader</l>
+</block>
+<script>
+<block s="doBroadcast">
+<l>Game Over</l>
+</block>
+</script>
+</block>
+</script>
+</block>
+</script>
+<script x="32" y="670.0000000000005">
+<block s="receiveMessage">
+<l>Next Level</l>
+</block>
+<block s="doSetVar">
+<l>GAME ON</l>
+<block s="reportFalse"/>
+</block>
+<block s="doChangeVar">
+<l>LEVEL</l>
+<l>1</l>
+</block>
+<block s="doBroadcast">
+<l>Delete All Clones</l>
+</block>
+<block s="doSayFor">
+<l>Next Level!</l>
+<l>2</l>
+</block>
+<block s="doStopOthers">
+<l>
+<option>all but this script</option>
+</l>
+</block>
+<block s="doBroadcastAndWait">
+<l>Setup</l>
+</block>
+<block s="doBroadcast">
+<l>Start Play</l>
+</block>
+</script>
+<script x="283" y="611.0000000000005">
+<block s="receiveMessage">
+<l>Game Over</l>
+</block>
+<block s="doStopOthers">
+<l>
+<option>all but this script</option>
+</l>
+</block>
+<block s="gotoXY">
+<l>-100</l>
+<l>10</l>
+</block>
+<block s="bubble">
+<block s="reportJoinWords">
+<list>
+<l>Game Over! You made it to level</l>
+<block var="LEVEL"/>
+<l>and scored</l>
+<block var="SCORE"/>
+<l>points.</l>
+</list>
+</block>
+</block>
+<block s="doBroadcast">
+<l>Delete all bullets</l>
+</block>
+<block s="doBroadcast">
+<l>Delete Invaders</l>
+</block>
+<block s="doBroadcast">
+<l>Game Over Message</l>
+</block>
+</script>
+<script x="25.999998000000005" y="238.99999999999994">
+<block s="receiveMessage">
+<l>Setup</l>
+</block>
+<block s="doSetVar">
+<l>GAME ON</l>
+<block s="reportFalse"/>
+</block>
+<block s="gotoXY">
+<l>0</l>
+<l>-125</l>
+</block>
+<block s="bubble">
+<l/>
+</block>
+</script>
+<script x="474" y="102">
+<block s="receiveMessage">
+<l>New Game</l>
+</block>
+<block s="doSetVar">
+<l>LEVEL</l>
+<l>1</l>
+</block>
+<block s="doSetVar">
+<l>LIVES</l>
+<l>3</l>
+</block>
+<block s="doSetVar">
+<l>SCORE</l>
+<l>0</l>
+</block>
+<block s="doBroadcastAndWait">
+<l>Setup</l>
+</block>
+</script>
+<script x="18" y="387">
+<block s="receiveMessage">
+<l>Died</l>
+</block>
+<block s="doSetVar">
+<l>GAME ON</l>
+<block s="reportFalse"/>
+</block>
+<block s="doChangeVar">
+<l>LIVES</l>
+<l>-1</l>
+</block>
+<block s="doIfElse">
+<block s="reportGreaterThan">
+<l>1</l>
+<block var="LIVES"/>
+</block>
+<script>
+<block s="doBroadcast">
+<l>Game Over</l>
+</block>
+</script>
+<script>
+<block s="doStopOthers">
+<l>
+<option>all but this script</option>
+</l>
+</block>
+<block s="doBroadcastAndWait">
+<l>Delete all bullets</l>
+</block>
+<block s="doSayFor">
+<l>Died!</l>
+<l>2</l>
+</block>
+<block s="doBroadcast">
+<l>Start Play</l>
+</block>
+</script>
+</block>
+</script>
+</scripts>
+</sprite>
+<watcher var="NUMBER OF INVADERS" style="normal" x="10" y="338.999998" color="243,118,29" hidden="true"/>
+<watcher scope="invader bullet" var="Invader Bullet Speed" style="normal" x="10" y="338.999998" color="243,118,29" hidden="true"/>
+<watcher var="NUMBER OF INVADER BULLETS" style="normal" x="158" y="333.999998" color="243,118,29" hidden="true"/>
+<watcher scope="player bullet" var="Is Master" style="normal" x="10" y="338.999998" color="243,118,29" hidden="true"/>
+<watcher scope="invader bullet" var="Is Master" style="normal" x="10" y="338.999998" color="243,118,29" hidden="true"/>
+<sprite name="Button" idx="5" x="5" y="-64" heading="90" scale="0.6" rotation="1" draggable="true" costume="1" color="221.85,0,146.42100000000005" pen="tip" id="702">
+<costumes>
+<list id="703">
+<item>
+<costume name="Start" center-x="206" center-y="101" image="data:image/png;base64,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" id="704"/>
+</item>
+<item>
+<costume name="New Game" center-x="171" center-y="72" image="data:image/png;base64,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" id="705"/>
+</item>
+</list>
+</costumes>
+<sounds>
+<list id="706"/>
+</sounds>
+<variables/>
+<blocks/>
+<scripts>
+<script x="35" y="39">
+<block s="receiveGo"/>
+<block s="hide"/>
+</script>
+<script x="36" y="122">
+<block s="receiveMessage">
+<l>Welcome Screen</l>
+</block>
+<block s="gotoXY">
+<l>5</l>
+<l>-64</l>
+</block>
+<block s="setHeading">
+<l>90</l>
+</block>
+<block s="setScale">
+<l>60</l>
+</block>
+<block s="doSwitchToCostume">
+<l>Start</l>
+</block>
+<block s="show"/>
+</script>
+<script x="298" y="39">
+<block s="receiveInteraction">
+<l>
+<option>clicked</option>
+</l>
+</block>
+<block s="doIfElse">
+<block s="reportEquals">
+<block s="getCostumeIdx"/>
+<l>1</l>
+</block>
+<script>
+<block s="doBroadcastAndWait">
+<l>New Game</l>
+</block>
+<block s="doBroadcast">
+<l>Start Play</l>
+</block>
+</script>
+<script>
+<block s="doBroadcast">
+<l>Welcome Screen</l>
+</block>
+</script>
+</block>
+</script>
+<script x="41" y="288">
+<block s="receiveMessage">
+<l>Game Over Message</l>
+</block>
+<block s="gotoXY">
+<l>5</l>
+<l>-64</l>
+</block>
+<block s="setHeading">
+<l>90</l>
+</block>
+<block s="setScale">
+<l>60</l>
+</block>
+<block s="doSwitchToCostume">
+<l>New Game</l>
+</block>
+<block s="show"/>
+</script>
+<script x="305" y="267">
+<block s="receiveMessage">
+<l>Setup</l>
+</block>
+<block s="hide"/>
+</script>
+</scripts>
+</sprite>
+<watcher var="LEVEL" style="normal" x="209" y="9.999998000000005" color="243,118,29"/>
+<watcher var="SCORE" style="normal" x="43" y="11.999998000000005" color="243,118,29"/>
+<watcher scope="Invader" s="yPosition" style="normal" x="10" y="338.999998" color="74,108,212" hidden="true"/>
+<watcher scope="Stage" s="getLastMessage" style="normal" x="10" y="338.999998" color="230,168,34" hidden="true"/>
+<watcher scope="Invader" var="Invader Shooting Frequency" style="normal" x="10" y="338.999998" color="243,118,29" hidden="true"/>
+<watcher scope="Invader" var="Invader Score" style="normal" x="10" y="338.999998" color="243,118,29" hidden="true"/>
+<watcher var="GAME ON" style="normal" x="10" y="338.999998" color="243,118,29" hidden="true"/>
+</sprites>
+</stage>
+<hidden/>
+<headers/>
+<code/>
+<blocks>
+<block-definition s="map %'function' over %'lists'" type="reporter" category="lists">
+<header/>
+<code/>
+<inputs>
+<input type="%repRing"/>
+<input type="%mult%l"/>
+</inputs>
+<script>
+<block s="doWarp">
+<script>
+<block s="doDeclareVariables">
+<list>
+<l>mapone</l>
+<l>mapmany</l>
+</list>
+</block>
+<block s="doSetVar">
+<l>mapone</l>
+<block s="reifyScript">
+<script>
+<block s="doIf">
+<custom-block s="empty? %l">
+<block var="data"/>
+</custom-block>
+<script>
+<block s="doReport">
+<block s="reportNewList">
+<list/>
+</block>
+</block>
+</script>
+</block>
+<block s="doReport">
+<block s="reportCONS">
+<block s="evaluate">
+<block var="function"/>
+<list>
+<block s="reportListItem">
+<l>1</l>
+<block var="data"/>
+</block>
+</list>
+</block>
+<block s="evaluate">
+<block var="mapone"/>
+<list>
+<block s="reportCDR">
+<block var="data"/>
+</block>
+</list>
+</block>
+</block>
+</block>
+</script>
+<list>
+<l>data</l>
+</list>
+</block>
+</block>
+<block s="doSetVar">
+<l>mapmany</l>
+<block s="reifyScript">
+<script>
+<block s="doIf">
+<custom-block s="empty? %l">
+<block s="reportListItem">
+<l>1</l>
+<block var="data lists"/>
+</block>
+</custom-block>
+<script>
+<block s="doReport">
+<block s="reportNewList">
+<list/>
+</block>
+</block>
+</script>
+</block>
+<block s="doReport">
+<block s="reportCONS">
+<block s="evaluate">
+<block var="function"/>
+<custom-block s="map %repRing over %mult%l">
+<block s="reifyReporter">
+<autolambda>
+<block s="reportListItem">
+<l>1</l>
+<l/>
+</block>
+</autolambda>
+<list/>
+</block>
+<list>
+<block var="data lists"/>
+</list>
+</custom-block>
+</block>
+<block s="evaluate">
+<block var="mapmany"/>
+<list>
+<custom-block s="map %repRing over %mult%l">
+<block s="reifyReporter">
+<autolambda>
+<block s="reportCDR">
+<l/>
+</block>
+</autolambda>
+<list/>
+</block>
+<list>
+<block var="data lists"/>
+</list>
+</custom-block>
+</list>
+</block>
+</block>
+</block>
+</script>
+<list>
+<l>data lists</l>
+</list>
+</block>
+</block>
+<block s="doIfElse">
+<custom-block s="empty? %l">
+<block s="reportCDR">
+<block var="lists"/>
+</block>
+</custom-block>
+<script>
+<block s="doReport">
+<block s="evaluate">
+<block var="mapone"/>
+<list>
+<block s="reportListItem">
+<l>1</l>
+<block var="lists"/>
+</block>
+</list>
+</block>
+</block>
+</script>
+<script>
+<block s="doReport">
+<block s="evaluate">
+<block var="mapmany"/>
+<list>
+<block var="lists"/>
+</list>
+</block>
+</block>
+</script>
+</block>
+</script>
+</block>
+</script>
+</block-definition>
+<block-definition s="empty? %'data'" type="predicate" category="lists">
+<header/>
+<code/>
+<inputs>
+<input type="%l"/>
+</inputs>
+<script>
+<block s="doReport">
+<block s="reportEquals">
+<block var="data"/>
+<block s="reportNewList">
+<list/>
+</block>
+</block>
+</block>
+</script>
+</block-definition>
+<block-definition s="keep items such that %'pred' from %'data'" type="reporter" category="lists">
+<header/>
+<code/>
+<inputs>
+<input type="%predRing"/>
+<input type="%l"/>
+</inputs>
+<script>
+<block s="doWarp">
+<script>
+<block s="doIf">
+<custom-block s="empty? %l">
+<block var="data"/>
+</custom-block>
+<script>
+<block s="doReport">
+<block s="reportNewList">
+<list/>
+</block>
+</block>
+</script>
+</block>
+<block s="doIfElse">
+<block s="evaluate">
+<block var="pred"/>
+<list>
+<block s="reportListItem">
+<l>1</l>
+<block var="data"/>
+</block>
+</list>
+</block>
+<script>
+<block s="doReport">
+<block s="reportCONS">
+<block s="reportListItem">
+<l>1</l>
+<block var="data"/>
+</block>
+<custom-block s="keep items such that %predRing from %l">
+<block var="pred"/>
+<block s="reportCDR">
+<block var="data"/>
+</block>
+</custom-block>
+</block>
+</block>
+</script>
+<script>
+<block s="doReport">
+<custom-block s="keep items such that %predRing from %l">
+<block var="pred"/>
+<block s="reportCDR">
+<block var="data"/>
+</block>
+</custom-block>
+</block>
+</script>
+</block>
+</script>
+</block>
+</script>
+</block-definition>
+<block-definition s="combine with %'function' items of %'data'" type="reporter" category="lists">
+<header/>
+<code/>
+<inputs>
+<input type="%repRing"/>
+<input type="%l"/>
+</inputs>
+<script>
+<block s="doWarp">
+<script>
+<block s="doIf">
+<custom-block s="empty? %l">
+<block s="reportCDR">
+<block var="data"/>
+</block>
+</custom-block>
+<script>
+<block s="doReport">
+<block s="reportListItem">
+<l>1</l>
+<block var="data"/>
+</block>
+</block>
+</script>
+</block>
+<block s="doReport">
+<block s="evaluate">
+<block var="function"/>
+<list>
+<block s="reportListItem">
+<l>1</l>
+<block var="data"/>
+</block>
+<custom-block s="combine with %repRing items of %l">
+<block var="function"/>
+<block s="reportCDR">
+<block var="data"/>
+</block>
+</custom-block>
+</list>
+</block>
+</block>
+</script>
+</block>
+</script>
+</block-definition>
+<block-definition s="if %'test' then %'true' else %'false'" type="reporter" category="control">
+<header/>
+<code/>
+<inputs>
+<input type="%b"/>
+<input type="%anyUE"/>
+<input type="%anyUE"/>
+</inputs>
+<script>
+<block s="doIfElse">
+<block var="test"/>
+<script>
+<block s="doReport">
+<block s="evaluate">
+<block var="true"/>
+<list/>
+</block>
+</block>
+</script>
+<script>
+<block s="doReport">
+<block s="evaluate">
+<block var="false"/>
+<list/>
+</block>
+</block>
+</script>
+</block>
+</script>
+</block-definition>
+<block-definition s="for %'i' = %'start' to %'end' %'action'" type="command" category="control">
+<header/>
+<code/>
+<inputs>
+<input type="%upvar"/>
+<input type="%n">1</input>
+<input type="%n">10</input>
+<input type="%cs"/>
+</inputs>
+<script>
+<block s="doDeclareVariables">
+<list>
+<l>step</l>
+<l>tester</l>
+</list>
+</block>
+<block s="doIfElse">
+<block s="reportGreaterThan">
+<block var="start"/>
+<block var="end"/>
+</block>
+<script>
+<block s="doSetVar">
+<l>step</l>
+<l>-1</l>
+</block>
+<block s="doSetVar">
+<l>tester</l>
+<block s="reifyReporter">
+<autolambda>
+<block s="reportLessThan">
+<block var="i"/>
+<block var="end"/>
+</block>
+</autolambda>
+<list/>
+</block>
+</block>
+</script>
+<script>
+<block s="doSetVar">
+<l>step</l>
+<l>1</l>
+</block>
+<block s="doSetVar">
+<l>tester</l>
+<block s="reifyReporter">
+<autolambda>
+<block s="reportGreaterThan">
+<block var="i"/>
+<block var="end"/>
+</block>
+</autolambda>
+<list/>
+</block>
+</block>
+</script>
+</block>
+<block s="doSetVar">
+<l>i</l>
+<block var="start"/>
+</block>
+<block s="doUntil">
+<block s="evaluate">
+<block var="tester"/>
+<list/>
+</block>
+<script>
+<block s="doRun">
+<block var="action"/>
+<list/>
+</block>
+<block s="doChangeVar">
+<l>i</l>
+<block var="step"/>
+</block>
+</script>
+</block>
+</script>
+</block-definition>
+<block-definition s="join words %'words'" type="reporter" category="operators">
+<header/>
+<code/>
+<inputs>
+<input type="%mult%txt"/>
+</inputs>
+<script>
+<block s="doWarp">
+<script>
+<block s="doIf">
+<custom-block s="empty? %l">
+<block s="reportCDR">
+<block var="words"/>
+</block>
+</custom-block>
+<script>
+<block s="doReport">
+<block s="reportListItem">
+<l>1</l>
+<block var="words"/>
+</block>
+</block>
+</script>
+</block>
+<block s="doReport">
+<block s="reportJoinWords">
+<list>
+<block s="reportListItem">
+<l>1</l>
+<block var="words"/>
+</block>
+<l></l>
+<custom-block s="join words %mult%txt">
+<block s="reportCDR">
+<block var="words"/>
+</block>
+</custom-block>
+</list>
+</block>
+</block>
+</script>
+</block>
+</script>
+</block-definition>
+<block-definition s="list $arrowRight sentence %'data'" type="reporter" category="operators">
+<header/>
+<code/>
+<inputs>
+<input type="%l"/>
+</inputs>
+<script>
+<block s="doWarp">
+<script>
+<block s="doReport">
+<custom-block s="join words %mult%txt">
+<block var="data"/>
+</custom-block>
+</block>
+</script>
+</block>
+</script>
+</block-definition>
+<block-definition s="sentence $arrowRight list %'text'" type="reporter" category="operators">
+<header/>
+<code/>
+<inputs>
+<input type="%txt"/>
+</inputs>
+<script>
+<block s="doWarp">
+<script>
+<block s="doReport">
+<block s="reportTextSplit">
+<block var="text"/>
+<l>
+<option>whitespace</option>
+</l>
+</block>
+</block>
+</script>
+</block>
+</script>
+</block-definition>
+<block-definition s="catch %'tag' %'action'" type="command" category="control">
+<header/>
+<code/>
+<inputs>
+<input type="%upvar"/>
+<input type="%cs"/>
+</inputs>
+<script>
+<block s="doCallCC">
+<block s="reifyScript">
+<script>
+<block s="doSetVar">
+<l>tag</l>
+<block var="cont"/>
+</block>
+<block s="doRun">
+<block var="action"/>
+<list/>
+</block>
+</script>
+<list>
+<l>cont</l>
+</list>
+</block>
+</block>
+</script>
+</block-definition>
+<block-definition s="throw %'cont'" type="command" category="control">
+<header/>
+<code/>
+<inputs>
+<input type="%s">catchtag</input>
+</inputs>
+<script>
+<block s="doRun">
+<block var="cont"/>
+<list/>
+</block>
+</script>
+</block-definition>
+<block-definition s="catch %'tag' %'value'" type="reporter" category="control">
+<header/>
+<code/>
+<inputs>
+<input type="%upvar"/>
+<input type="%anyUE"/>
+</inputs>
+<script>
+<block s="doCallCC">
+<block s="reifyScript">
+<script>
+<block s="doSetVar">
+<l>tag</l>
+<block var="cont"/>
+</block>
+<block s="doReport">
+<block s="evaluate">
+<block var="value"/>
+<list/>
+</block>
+</block>
+</script>
+<list>
+<l>cont</l>
+</list>
+</block>
+</block>
+</script>
+</block-definition>
+<block-definition s="throw %'tag' %'value'" type="command" category="control">
+<header/>
+<code/>
+<inputs>
+<input type="%s">catchtag</input>
+<input type="%s"/>
+</inputs>
+<script>
+<block s="doRun">
+<block var="tag"/>
+<list>
+<block var="value"/>
+</list>
+</block>
+</script>
+</block-definition>
+<block-definition s="for each %'item' of %'data' %'action'" type="command" category="lists">
+<header/>
+<code/>
+<inputs>
+<input type="%upvar"/>
+<input type="%l"/>
+<input type="%cs"/>
+</inputs>
+<script>
+<block s="doUntil">
+<custom-block s="empty? %l">
+<block var="data"/>
+</custom-block>
+<script>
+<block s="doSetVar">
+<l>item</l>
+<block s="reportListItem">
+<l>1</l>
+<block var="data"/>
+</block>
+</block>
+<block s="doRun">
+<block var="action"/>
+<list>
+<block s="reportListItem">
+<l>1</l>
+<block var="data"/>
+</block>
+</list>
+</block>
+<block s="doSetVar">
+<l>data</l>
+<block s="reportCDR">
+<block var="data"/>
+</block>
+</block>
+</script>
+</block>
+</script>
+</block-definition>
+<block-definition s="if %'test' do %'action' and pause all $pause-1-255-220-0" type="command" category="control">
+<header/>
+<code/>
+<inputs>
+<input type="%boolUE"/>
+<input type="%cs"/>
+</inputs>
+<script>
+<block s="doDeclareVariables">
+<list>
+<l>breakpoint</l>
+</list>
+</block>
+<block s="doIf">
+<block s="evaluate">
+<block var="test"/>
+<list/>
+</block>
+<script>
+<block s="doSetVar">
+<l>breakpoint</l>
+<block var="test"/>
+</block>
+<block s="doShowVar">
+<l>breakpoint</l>
+</block>
+<block s="doRun">
+<block var="action"/>
+<list/>
+</block>
+<block s="doPauseAll"/>
+<block s="doHideVar">
+<l/>
+</block>
+</script>
+</block>
+</script>
+</block-definition>
+<block-definition s="word $arrowRight list %'word'" type="reporter" category="operators">
+<header/>
+<code/>
+<inputs>
+<input type="%txt"/>
+</inputs>
+<script>
+<block s="doWarp">
+<script>
+<block s="doReport">
+<block s="reportTextSplit">
+<block var="word"/>
+<l>
+<option>letter</option>
+</l>
+</block>
+</block>
+</script>
+</block>
+</script>
+</block-definition>
+<block-definition s="ignore %'x'" type="command" category="control">
+<header/>
+<code/>
+<inputs>
+<input type="%s"/>
+</inputs>
+</block-definition>
+<block-definition s="tell %'sprite' to %'commands'" type="command" category="sensing">
+<header/>
+<code/>
+<inputs>
+<input type="%txt">Sprite</input>
+<input type="%cs"/>
+</inputs>
+<script>
+<block s="doRun">
+<block s="reportAttributeOf">
+<block var="commands"/>
+<block var="sprite"/>
+</block>
+<list/>
+</block>
+</script>
+</block-definition>
+<block-definition s="ask for %'reporter' from %'sprite'" type="reporter" category="sensing">
+<header/>
+<code/>
+<inputs>
+<input type="%repRing"/>
+<input type="%txt">Sprite</input>
+</inputs>
+<script>
+<block s="doReport">
+<block s="evaluate">
+<block s="reportAttributeOf">
+<block var="reporter"/>
+<block var="sprite"/>
+</block>
+<list/>
+</block>
+</block>
+</script>
+</block-definition>
+</blocks>
+<variables>
+<variable name="NUMBER OF PLAYER BULLETS">
+<l>0</l>
+</variable>
+<variable name="INVADER DIRECTION">
+<l>90</l>
+</variable>
+<variable name="new invader direction">
+<l>90</l>
+</variable>
+<variable name="LEVEL">
+<l>1</l>
+</variable>
+<variable name="SCORE">
+<l>0</l>
+</variable>
+<variable name="LIVES">
+<l>3</l>
+</variable>
+<variable name="NUMBER OF INVADERS">
+<l>55</l>
+</variable>
+<variable name="NUMBER OF INVADER BULLETS">
+<l>0</l>
+</variable>
+<variable name="GAME ON">
+<bool>true</bool>
+</variable>
+</variables>
+</project>
