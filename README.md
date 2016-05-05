@@ -26,4 +26,4 @@ A place to put Snap! code (exported xml files)
 | [simon.xml](http://snap.berkeley.edu/snapsource/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/simon.xml) | [simon.xml (presentation)](http://wcyuan.github.io/snap/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/simon.xml) |
 | [flowers.xml](http://snap.berkeley.edu/snapsource/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/flowers.xml) | [flowers.xml (presentation)](http://wcyuan.github.io/snap/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/flowers.xml) |
 | [Ramond-Xu-Pacman.xml](http://snap.berkeley.edu/snapsource/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/Raymond-Xu-Pacman.xml) |  |
-
+| [typing-game.xml](http://snap.berkeley.edu/snapsource/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/typing-game.xml) | [typing-game.xml (presentation)](http://wcyuan.github.io/snap/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/typing-game.xml) |
