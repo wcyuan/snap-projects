@@ -1,8 +1,8 @@
 A place to put Snap! code (exported xml files)
 
 
-| Snap Link| Presentation Link |
-| -------- | ----------------- |
+| Snap Link| Presentation Link | Notes |
+| -------- | ----------------- | ----- |
 | [Catch.me.xml](http://snap.berkeley.edu/snapsource/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/Catch.me.xml) | [Catch.me.xml (presentation)](http://wcyuan.github.io/snap/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/Catch.me.xml) |
 | [Drum.Looper.xml](http://snap.berkeley.edu/snapsource/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/Drum.Looper.xml) | [Drum.Looper.xml (presentation)](http://wcyuan.github.io/snap/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/Drum.Looper.xml) |
 | [Flappy.Bird.xml](http://snap.berkeley.edu/snapsource/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/Flappy.Bird.xml) | [Flappy.Bird.xml (presentation)](http://wcyuan.github.io/snap/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/Flappy.Bird.xml) |
@@ -38,6 +38,8 @@ A place to put Snap! code (exported xml files)
 | [Snake-Allie.xml](http://snap.berkeley.edu/snapsource/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/Snake-Allie.xml) | [Snake-Allie.xml (presentation)](http://wcyuan.github.io/snap/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/Snake-Allie.xml) |
 | [clone-particles-Allie.xml](http://snap.berkeley.edu/snapsource/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/clone-particles-Allie.xml) | [clone-particles-Allie.xml (presentation)](http://wcyuan.github.io/snap/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/clone-particles-Allie.xml) |
 | [bounce.xml](http://snap.berkeley.edu/snapsource/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/bounce.xml) | [bounce.xml (presentation)](http://wcyuan.github.io/snap/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/bounce.xml) |
-| [clone-handle.xml](http://snap.berkeley.edu/snapsource/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/clone-handle.xml) | [clone-handle.xml (presentation)](http://wcyuan.github.io/snap/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/clone-handle.xml) |
-
+| [clone-handle.xml](http://snap.berkeley.edu/snapsource/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/clone-handle.xml) | [clone-handle.xml (presentation)](http://wcyuan.github.io/snap/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/clone-handle.xml) | This uses first class sprites which were [added to snap on May 2, 2016](https://github.com/jmoenig/Snap--Build-Your-Own-Blocks/commit/ed3b56a610dbd53da8b7165e7a0b1a725885a494) so until my fork is updated, the presentation version won't work |
+| [kill-closest-clone.xml](http://snap.berkeley.edu/snapsource/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/kill-closest-clone.xml) | [kill-closest-clone.xml (presentation) ](http://wcyuan.github.io/snap/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/kill-closest-clone.xml) | https://piazza.com/class/ipydv5suhrw56c?cid=9 |
+| [kill-closest-clone-nolist.xml](http://snap.berkeley.edu/snapsource/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/kill-closest-clone-nolist.xml) | [kill-closest-clone-nolist.xml (presentation) ](http://wcyuan.github.io/snap/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/kill-closest-clone-nolist.xml) |
+| [kill-closest-clone-notools.xml](http://snap.berkeley.edu/snapsource/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/kill-closest-clone-notools.xml) | [kill-closest-clone-notools.xml (presentation) ](http://wcyuan.github.io/snap/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/kill-closest-clone-notools.xml) |
 
