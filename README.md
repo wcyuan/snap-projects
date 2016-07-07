@@ -38,4 +38,6 @@ A place to put Snap! code (exported xml files)
 | [Snake-Allie.xml](http://snap.berkeley.edu/snapsource/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/Snake-Allie.xml) | [Snake-Allie.xml (presentation)](http://wcyuan.github.io/snap/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/Snake-Allie.xml) |
 | [clone-particles-Allie.xml](http://snap.berkeley.edu/snapsource/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/clone-particles-Allie.xml) | [clone-particles-Allie.xml (presentation)](http://wcyuan.github.io/snap/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/clone-particles-Allie.xml) |
 | [bounce.xml](http://snap.berkeley.edu/snapsource/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/bounce.xml) | [bounce.xml (presentation)](http://wcyuan.github.io/snap/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/bounce.xml) |
+| [clone-handle.xml](http://snap.berkeley.edu/snapsource/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/clone-handle.xml) | [clone-handle.xml (presentation)](http://wcyuan.github.io/snap/snap.html#run:https://raw.githubusercontent.com/wcyuan/snap-projects/master/clone-handle.xml) |
+
 
